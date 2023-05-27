@@ -3,7 +3,7 @@ const app = express();
 
 
 if(process.env.NODE_ENV !== 'PRODUCTION') {
-    require('dontenv').config({
+    require('dotenv').config({
         path:'backend/config/.env'
     })
 }
